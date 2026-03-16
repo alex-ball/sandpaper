@@ -50,29 +50,29 @@ the path to the new lesson
 tmp <- tempfile()
 on.exit(unlink(tmp))
 lsn <- create_lesson(tmp, name = "This Lesson", open = FALSE)
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
 #> ℹ No schedule set, using Rmd files in episodes/ directory.
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
 #> → To remove this message, define your schedule in config.yaml or use `set_episodes()` to generate it.
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
 #> ────────────────────────────────────────────────────────────────────────
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
 #> ℹ To save this configuration, use
 #> 
 #> set_episodes(path = path, order = ep, write = TRUE)
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
-#> ☐ Edit /tmp/RtmpXPofNf/file1a75393e3672/episodes/introduction.Rmd.
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
-#> ✔ First episode created in /tmp/RtmpXPofNf/file1a75393e3672/episodes/introduction.Rmd
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
+#> ☐ Edit /tmp/RtmpQwfBDN/file1e81711797ba/episodes/introduction.Rmd.
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
+#> ✔ First episode created in /tmp/RtmpQwfBDN/file1e81711797ba/episodes/introduction.Rmd
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
 #> ℹ Using GitHub token for authenticated API request.
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
 #> ℹ Downloading workflows from https://api.github.com/repos/carpentries/workbench-workflows/releases/latest
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
 #> ℹ Workflows up-to-date!
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
 #> ℹ Consent to use package cache provided
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
 #> - The project is out-of-sync -- use `renv::status()` for details.
 #> → Searching for and installing available dependencies
 #> → Hydrating
@@ -88,8 +88,8 @@ lsn <- create_lesson(tmp, name = "This Lesson", open = FALSE)
 #> - evaluate      1.0.5
 #> - fastmap       1.2.0
 #> - fontawesome   0.5.3
-#> - fs            1.6.6
-#> - highr         0.11
+#> - fs            1.6.7
+#> - highr         0.12
 #> - htmltools     0.5.9
 #> - jquerylib     0.1.4
 #> - jsonlite      2.0.0
@@ -123,8 +123,8 @@ lsn <- create_lesson(tmp, name = "This Lesson", open = FALSE)
 #> - evaluate      [* -> 1.0.5]
 #> - fastmap       [* -> 1.2.0]
 #> - fontawesome   [* -> 0.5.3]
-#> - fs            [* -> 1.6.6]
-#> - highr         [* -> 0.11]
+#> - fs            [* -> 1.6.7]
+#> - highr         [* -> 0.12]
 #> - htmltools     [* -> 0.5.9]
 #> - jquerylib     [* -> 0.1.4]
 #> - jsonlite      [* -> 2.0.0]
@@ -142,11 +142,11 @@ lsn <- create_lesson(tmp, name = "This Lesson", open = FALSE)
 #> - yaml          [* -> 2.3.12]
 #> 
 #> The version of R recorded in the lockfile will be updated:
-#> - R             [* -> 4.5.2]
+#> - R             [* -> 4.5.3]
 #> 
-#> - Lockfile written to "/tmp/RtmpXPofNf/file1a75393e3672/renv/profiles/lesson-requirements/renv.lock".
-#> ✔ Lesson successfully created in /tmp/RtmpXPofNf/file1a75393e3672
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75393e3672...
+#> - Lockfile written to "/tmp/RtmpQwfBDN/file1e81711797ba/renv/profiles/lesson-requirements/renv.lock".
+#> ✔ Lesson successfully created in /tmp/RtmpQwfBDN/file1e81711797ba
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e81711797ba...
 lsn
-#> /tmp/RtmpXPofNf/file1a75393e3672
+#> /tmp/RtmpQwfBDN/file1e81711797ba
 ```

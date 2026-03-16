@@ -75,29 +75,29 @@ if (interactive() || Sys.getenv("CI") != "") {
     move_episode("experimental.md", path = tmp)
   }
 }
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
 #> ℹ No schedule set, using Rmd files in episodes/ directory.
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
 #> → To remove this message, define your schedule in config.yaml or use `set_episodes()` to generate it.
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
 #> ────────────────────────────────────────────────────────────────────────
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
 #> ℹ To save this configuration, use
 #> 
 #> set_episodes(path = path, order = ep, write = TRUE)
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
-#> ☐ Edit /tmp/RtmpXPofNf/file1a75342918a7/episodes/introduction.Rmd.
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
-#> ✔ First episode created in /tmp/RtmpXPofNf/file1a75342918a7/episodes/introduction.Rmd
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
+#> ☐ Edit /tmp/RtmpQwfBDN/file1e8168d234da/episodes/introduction.Rmd.
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
+#> ✔ First episode created in /tmp/RtmpQwfBDN/file1e8168d234da/episodes/introduction.Rmd
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
 #> ℹ Using GitHub token for authenticated API request.
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
 #> ℹ Downloading workflows from https://api.github.com/repos/carpentries/workbench-workflows/releases/latest
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
 #> ℹ Workflows up-to-date!
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
 #> ℹ Consent to use package cache provided
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
 #> - The project is out-of-sync -- use `renv::status()` for details.
 #> → Searching for and installing available dependencies
 #> → Hydrating
@@ -113,8 +113,8 @@ if (interactive() || Sys.getenv("CI") != "") {
 #> - evaluate      1.0.5
 #> - fastmap       1.2.0
 #> - fontawesome   0.5.3
-#> - fs            1.6.6
-#> - highr         0.11
+#> - fs            1.6.7
+#> - highr         0.12
 #> - htmltools     0.5.9
 #> - jquerylib     0.1.4
 #> - jsonlite      2.0.0
@@ -148,8 +148,8 @@ if (interactive() || Sys.getenv("CI") != "") {
 #> - evaluate      [* -> 1.0.5]
 #> - fastmap       [* -> 1.2.0]
 #> - fontawesome   [* -> 0.5.3]
-#> - fs            [* -> 1.6.6]
-#> - highr         [* -> 0.11]
+#> - fs            [* -> 1.6.7]
+#> - highr         [* -> 0.12]
 #> - htmltools     [* -> 0.5.9]
 #> - jquerylib     [* -> 0.1.4]
 #> - jsonlite      [* -> 2.0.0]
@@ -167,14 +167,14 @@ if (interactive() || Sys.getenv("CI") != "") {
 #> - yaml          [* -> 2.3.12]
 #> 
 #> The version of R recorded in the lockfile will be updated:
-#> - R             [* -> 4.5.2]
+#> - R             [* -> 4.5.3]
 #> 
-#> - Lockfile written to "/tmp/RtmpXPofNf/file1a75342918a7/renv/profiles/lesson-requirements/renv.lock".
-#> ✔ Lesson successfully created in /tmp/RtmpXPofNf/file1a75342918a7
-#> → Creating Lesson in /tmp/RtmpXPofNf/file1a75342918a7...
-#> ☐ Edit /tmp/RtmpXPofNf/file1a75342918a7/episodes/getting-started.md.
-#> ☐ Edit /tmp/RtmpXPofNf/file1a75342918a7/episodes/plotting.Rmd.
-#> ☐ Edit /tmp/RtmpXPofNf/file1a75342918a7/episodes/experimental.md.
+#> - Lockfile written to "/tmp/RtmpQwfBDN/file1e8168d234da/renv/profiles/lesson-requirements/renv.lock".
+#> ✔ Lesson successfully created in /tmp/RtmpQwfBDN/file1e8168d234da
+#> → Creating Lesson in /tmp/RtmpQwfBDN/file1e8168d234da...
+#> ☐ Edit /tmp/RtmpQwfBDN/file1e8168d234da/episodes/getting-started.md.
+#> ☐ Edit /tmp/RtmpQwfBDN/file1e8168d234da/episodes/plotting.Rmd.
+#> ☐ Edit /tmp/RtmpQwfBDN/file1e8168d234da/episodes/experimental.md.
 #> episodes:
 #> - introduction.Rmd
 #> - getting-started.md
