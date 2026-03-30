@@ -82,6 +82,21 @@ fix_codeblocks <- function(nodes = NULL) {
     class_headings <- toupper(trimws(xml2::xml_attr(outputs, "class")))
     add_code_heading(outputs, apply_translations(class_headings, translations))
   }
+
+  # get all a nodes with href matching the pattern "cb([0-9]+)-([0-9]+)", capturing the code block id and the output id
+  as <- xml2::xml_find_all(nodes, ".//a[starts-with(@href, '#cb') and contains(@href, '-')]")
+  if (length(as)) {
+    ids <- xml2::xml_attr(as, "href")
+
+    # extract the codeblock id
+    codeblock_ids <- sub("#cb([0-9]+-[0-9]+)", "\\1", ids)
+
+    # add the aria-describedby attribute to the anchor nodes
+    for (i in seq_along(as)) {
+      xml2::xml_set_attr(as[i], "aria-label", paste0("code-block-", codeblock_ids[i]))
+    }
+  }
+
   invisible(nodes)
 }
 
