@@ -83,7 +83,7 @@ fix_codeblocks <- function(nodes = NULL) {
     add_code_heading(outputs, apply_translations(class_headings, translations))
   }
 
-  # get all a nodes with href matching the pattern "cb([0-9]+)-([0-9]+)", capturing the code block id and the output id
+  # get all anchor nodes with href matching the pattern "cb([0-9]+)-([0-9]+)", capturing the codeblock id
   as <- xml2::xml_find_all(nodes, ".//a[starts-with(@href, '#cb') and contains(@href, '-')]")
   if (length(as)) {
     ids <- xml2::xml_attr(as, "href")
@@ -91,7 +91,7 @@ fix_codeblocks <- function(nodes = NULL) {
     # extract the codeblock id
     codeblock_ids <- sub("#cb([0-9]+-[0-9]+)", "\\1", ids)
 
-    # add the aria-describedby attribute to the anchor nodes
+    # add the aria-label attribute to the anchor nodes
     for (i in seq_along(as)) {
       xml2::xml_set_attr(as[i], "aria-label", paste0("code-block-", codeblock_ids[i]))
     }
@@ -102,6 +102,7 @@ fix_codeblocks <- function(nodes = NULL) {
 
 add_code_heading <- function(codes = NULL, labels = "OUTPUT") {
   if (length(codes) == 0) return(codes)
+  # downlit removes this attribute! Handle in lua? Nope, has to be in varnish's javascript :(
   xml2::xml_set_attr(codes, "tabindex", "0")
   # NOTE: xml_add_sibling adds the siblings from bottom to top, so these labels
   # need to be in reverse. It's weird.
